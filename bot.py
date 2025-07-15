@@ -36,8 +36,11 @@ from telegram.ext import (
 )
 # Add this import to load .env files
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 # --- Bot Setup and Configuration ---
+
+keep_alive()
 
 # Set up logging to see bot activity and troubleshoot errors
 logging.basicConfig(
